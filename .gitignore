@@ -1,0 +1,5 @@
+/.idea/
+android-deployd-client.iml
+.gradle/
+/local.properties
+/build/
