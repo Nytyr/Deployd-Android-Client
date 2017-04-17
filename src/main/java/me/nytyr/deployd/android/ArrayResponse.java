@@ -20,4 +20,12 @@ public class ArrayResponse {
                 response.statusCode
         );
     }
+
+    @Override
+    public String toString() {
+        return "ArrayResponse{" +
+                "body=" + body +
+                ", statusCode=" + statusCode +
+                '}';
+    }
 }
