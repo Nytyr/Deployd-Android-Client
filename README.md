@@ -44,6 +44,12 @@ JSONObject query;
 Deployd.collection("users").del(query);
 Deployd.collection("users").del("id");
 ```
+
+## Building
+```
+./gradlew makeJar
+```
+
 ## Running tests
 ```
 ./gradlew test

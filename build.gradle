@@ -24,6 +24,19 @@ repositories {
     mavenCentral()
 }
 
+task clearJar(type: Delete) {
+    delete 'build/libs/deployd.jar'
+}
+
+task makeJar(type: Copy) {
+    from('build/intermediates/bundles/release/')
+    into('build/outputs/')
+    include('classes.jar')
+    rename ('classes.jar', 'deployd.jar')
+}
+
+makeJar.dependsOn(clearJar, build)
+
 dependencies {
     compile group: 'cz.msebera.android' , name: 'httpclient', version: '4.4.1.1'
 
