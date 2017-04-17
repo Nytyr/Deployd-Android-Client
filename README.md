@@ -2,6 +2,7 @@ Android Deployd Client
 =====
 
 [![Build Status](https://travis-ci.org/Nytyr/Deployd-Android-Client.svg?branch=master)](https://travis-ci.org/Nytyr/Deployd-Android-Client)
+
 A library to simplify [Deployd](http://deployd.com) integration in Android
 
 ## Getting started
